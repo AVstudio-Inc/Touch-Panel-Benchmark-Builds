@@ -1,18 +1,19 @@
-# TouchPanelMark™ v1.0.0 — Deployment & Usage Guide
+# TouchPanelMark™ v1.0.1 — Deployment & Usage Guide
 
 > **Commercial Touch Panel Benchmark & Diagnostic Suite**  
 > *Created by [AVstudio Inc](https://avstudio.app)*
 
 ---
 
-## 📦 Build Archive Contents
+## 📦 Build Archive Direct Downloads
 
-This directory contains pre-compiled, production-ready release archives for **TouchPanelMark™ v1.0.0**:
+This directory contains pre-compiled, production-ready release archives for **TouchPanelMark™ v1.0.1**:
 
-| File / Archive | Target Platform | Description |
-| :--- | :--- | :--- |
-| **`TouchPanelMark_v1.0.0.ch5z`** | Crestron CH5 Touch Panels | Compiled Crestron CH5 deployment archive |
-| **`TouchPanelMark_v1.0.0.zip`** | AVstudio AVS-10 / Commercial Web | Standalone HTML5 web release ZIP archive |
+| Target Platform | Archive Package | Description | Direct Download Link |
+| :--- | :--- | :--- | :--- |
+| **Crestron CH5 Touch Panels** | `TouchPanelMark_v1.0.1.ch5z` | Compiled Crestron CH5 deployment archive | [📥 Download `.ch5z`](https://github.com/AVstudio-Inc/Touch-Panel-Benchmark-Builds/raw/main/TouchPanelMark_v1.0.1.ch5z) |
+| **AVstudio AVS-10 / Web Panels** | `TouchPanelMark_v1.0.1.zip` | Standalone HTML5 web release ZIP archive | [📥 Download `.zip`](https://github.com/AVstudio-Inc/Touch-Panel-Benchmark-Builds/raw/main/TouchPanelMark_v1.0.1.zip) |
+| **All Version Releases** | `Releases` | Tagged releases & version history | [🚀 View GitHub Releases](https://github.com/AVstudio-Inc/Touch-Panel-Benchmark-Builds/releases) |
 
 ---
 
@@ -27,16 +28,16 @@ This directory contains pre-compiled, production-ready release archives for **To
    ```
 2. Log in with panel administrator credentials.
 3. Select **Upload Project** from the menu on the left side.
-4. Select `TouchPanelMark_v1.0.0.ch5z` and click **Upload**.
+4. Select `TouchPanelMark_v1.0.1.ch5z` and click **Upload**.
 
 #### Option B: Via Crestron CH5 Utilities CLI (Command Line)
 ```bash
-npx @crestron/ch5-utilities-cli deploy -i <TOUCH_PANEL_IP> -p TouchPanelMark_v1.0.0.ch5z
+npx @crestron/ch5-utilities-cli deploy -i <TOUCH_PANEL_IP> -p TouchPanelMark_v1.0.1.ch5z
 ```
 
 #### Option C: Via Crestron Toolbox
 1. Open **Crestron Toolbox** → **Web XPanel / CH5 Project Upload**.
-2. Connect to the panel's IP address, select `TouchPanelMark_v1.0.0.ch5z`, and click **Upload**.
+2. Connect to the panel's IP address, select `TouchPanelMark_v1.0.1.ch5z`, and click **Upload**.
 
 ---
 
@@ -49,7 +50,7 @@ npx @crestron/ch5-utilities-cli deploy -i <TOUCH_PANEL_IP> -p TouchPanelMark_v1.
    ```
 2. Authenticate with panel administrator credentials.
 3. Select **Upload Project** from the management menu.
-4. Select `TouchPanelMark_v1.0.0.zip` (or `.ch5z` project archive) and click **Upload**.
+4. Select `TouchPanelMark_v1.0.1.zip` (or `.ch5z` project archive) and click **Upload**.
 
 ---
 
