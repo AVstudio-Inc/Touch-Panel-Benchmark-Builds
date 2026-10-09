@@ -1,4 +1,4 @@
-# TouchPanelMark™ v1.0.2 — Deployment & Usage Guide
+# TouchPanelMark™ v1.0.3 — Deployment & Usage Guide
 
 > **Commercial Touch Panel Benchmark & Diagnostic Suite**  
 > *Created by [AVstudio Inc](https://avstudio.app)*
@@ -7,12 +7,12 @@
 
 ## 📦 Build Archive Direct Downloads
 
-This directory contains pre-compiled, production-ready release archives for **TouchPanelMark™ v1.0.2**:
+This directory contains pre-compiled, production-ready release archives for **TouchPanelMark™ v1.0.3**:
 
 | Target Platform | Archive Package | Description | Direct Download Link |
 | :--- | :--- | :--- | :--- |
-| **Crestron CH5 Touch Panels** | `TouchPanelMark_v1.0.2.ch5z` | Compiled Crestron CH5 deployment archive | [📥 Download `.ch5z`](https://github.com/AVstudio-Inc/Touch-Panel-Benchmark-Builds/raw/main/TouchPanelMark_v1.0.2.ch5z) |
-| **AVstudio AVS-10 / Web Panels** | `TouchPanelMark_v1.0.2.zip` | Standalone HTML5 web release ZIP archive | [📥 Download `.zip`](https://github.com/AVstudio-Inc/Touch-Panel-Benchmark-Builds/raw/main/TouchPanelMark_v1.0.2.zip) |
+| **Crestron CH5 Touch Panels** | `TouchPanelMark_v1.0.3.ch5z` | Compiled Crestron CH5 deployment archive | [📥 Download `.ch5z`](https://github.com/AVstudio-Inc/Touch-Panel-Benchmark-Builds/raw/main/TouchPanelMark_v1.0.3.ch5z) |
+| **AVstudio AVS-10 / AVS-15 / Web Panels** | `TouchPanelMark_v1.0.3.zip` | Standalone HTML5 web release ZIP archive | [📥 Download `.zip`](https://github.com/AVstudio-Inc/Touch-Panel-Benchmark-Builds/raw/main/TouchPanelMark_v1.0.3.zip) |
 | **All Version Releases** | `Releases` | Tagged releases & version history | [🚀 View GitHub Releases](https://github.com/AVstudio-Inc/Touch-Panel-Benchmark-Builds/releases) |
 
 ---
@@ -28,16 +28,16 @@ This directory contains pre-compiled, production-ready release archives for **To
    ```
 2. Log in with panel administrator credentials.
 3. Select **Upload Project** from the menu on the left side.
-4. Select `TouchPanelMark_v1.0.2.ch5z` and click **Upload**.
+4. Select `TouchPanelMark_v1.0.3.ch5z` and click **Upload**.
 
 #### Option B: Via Crestron CH5 Utilities CLI (Command Line)
 ```bash
-npx @crestron/ch5-utilities-cli deploy -i <TOUCH_PANEL_IP> -p TouchPanelMark_v1.0.2.ch5z
+npx @crestron/ch5-utilities-cli deploy -i <TOUCH_PANEL_IP> -p TouchPanelMark_v1.0.3.ch5z
 ```
 
 #### Option C: Via Crestron Toolbox
 1. Open **Crestron Toolbox** → **Web XPanel / CH5 Project Upload**.
-2. Connect to the panel's IP address, select `TouchPanelMark_v1.0.2.ch5z`, and click **Upload**.
+2. Connect to the panel's IP address, select `TouchPanelMark_v1.0.3.ch5z`, and click **Upload**.
 
 ---
 
@@ -50,7 +50,7 @@ npx @crestron/ch5-utilities-cli deploy -i <TOUCH_PANEL_IP> -p TouchPanelMark_v1.
    ```
 2. Authenticate with panel administrator credentials.
 3. Select **Upload Project** from the management menu.
-4. Select `TouchPanelMark_v1.0.2.zip` (or `.ch5z` project archive) and click **Upload**.
+4. Select `TouchPanelMark_v1.0.3.zip` (or `.ch5z` project archive) and click **Upload**.
 
 ---
 
@@ -58,20 +58,21 @@ npx @crestron/ch5-utilities-cli deploy -i <TOUCH_PANEL_IP> -p TouchPanelMark_v1.
 
 The table below summarizes empirical TouchPanelMark performance scores and official hardware specifications across tested commercial touch panel platforms:
 
-| Specification / Performance Metric | AVstudio AVS-10 | Crestron TSW-1080-UC | Crestron TSW-1070 | Generic 4-Core Touch Panel |
-| :--- | :--- | :--- | :--- | :--- |
-| **Testing Status** | ✅ Empirical Tested | ⚠️ Specs Projected | ✅ Empirical Tested | ✅ Empirical Tested |
-| **Overall TouchPanelMark Score** | **515 / 1000** | **740 / 1000** *(Projected)* | **420 / 1000** | **432 / 1000** |
-| **Performance Tier Rating** | **S / A-Tier** | **S-Tier** *(Projected)* | **C-Tier** | **C-Tier** |
-| **SoC / Processor** | Rockchip RK3576 Octa-Core | Octa-Core ARM | Quad-Core ARM Cortex-A53 | Quad-Core ARM 1.4GHz |
-| **System Memory (RAM)** | 4 GB LPDDR4 | 8 GB LPDDR4 | 2 GB LPDDR3 | 2 GB LPDDR3 |
-| **Display Resolution** | 1280 × 800 | 1920 × 1200 | 1280 × 800 | 1280 × 800 |
-| **Web Browser Engine** | Chromium 150 (WebView) | Chromium Embedded | Chromium 80 Embedded | Embedded WebKit / WebView |
-| **Max Stable DOM Capacity (@ 30+ FPS)** | **5,000 nodes** | **7,500 nodes** *(Projected)* | **2,200 nodes** | **2,500 nodes** |
-| **Touch Response Latency** | **20 ms** *(S-Tier)* | **32 ms** | **64 ms** | **29 ms** |
-| **Average Render Frame Rate** | **38 FPS** | **54 FPS** | **28 FPS** | **37 FPS** |
-| **Digitizer Multi-Touch** | 10-Point Multi-Touch | 5-Point Multi-Touch | 5-Point Multi-Touch | 5-Point Multi-Touch |
-| **Network Interface** | 1 Gbps Ethernet / Wi-Fi | 1 Gbps PoE+ / Wi-Fi 6E | 100 Mbps PoE | 100 Mbps Ethernet |
+| Specification / Performance Metric | AVstudio AVS-10 | AVstudio AVS-15 | Crestron TSW-1080-UC | Crestron TSW-1070 | Generic 4-Core Touch Panel |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Testing Status** | ✅ Empirical Tested | ✅ Empirical Tested | ⚠️ Conservative Est. (No Tests) | ✅ Empirical Tested | ✅ Empirical Tested |
+| **Overall TouchPanelMark Score** | **468 / 1000** | **465 / 1000** | **445 / 1000** *(Est. ≤ AVS-10)* | **420 / 1000** | **432 / 1000** |
+| **Performance Tier Rating** | **C-Tier (Fast Touch)** | **C-Tier (Fast Touch)** | **C-Tier** *(Projected)* | **C-Tier** | **C-Tier** |
+| **SoC / Processor** | Rockchip RK3576 Octa-Core | Rockchip RK3576 Octa-Core | Octa-Core ARM | Quad-Core ARM Cortex-A53 | Quad-Core ARM 1.4GHz |
+| **System Memory (RAM)** | 4 GB LPDDR4 | 4 GB LPDDR4 | 8 GB LPDDR4 | 2 GB LPDDR3 | 2 GB LPDDR3 |
+| **Display Resolution** | 1280 × 800 (10.1") | 1920 × 1080 (15.6" FHD) | 1920 × 1200 (2.25x load) | 1280 × 800 | 1280 × 800 |
+| **Web Browser Engine** | Chromium 150 (WebView) | Chromium 150 (WebView) | Chromium Embedded | Chromium 80 Embedded | Embedded WebKit / WebView |
+| **Max Stable DOM Capacity (@ 30+ FPS)** | **5,000 nodes** | **5,000 nodes** | **~4,000 nodes** *(Est.)* | **2,200 nodes** | **2,500 nodes** |
+| **Touch Response Latency** | **23 ms** *(S-Tier)* | **25 ms** *(A-Tier)* | **~42 ms** *(Est.)* | **64 ms** | **29 ms** |
+| **Average Render Frame Rate** | **36 FPS** | **37 FPS** | **~33 FPS** *(Est.)* | **28 FPS** | **37 FPS** |
+| **Graphics & CSS Score** | **567 / 1000** | **583 / 1000** | **490 / 1000** *(Est.)* | **450 / 1000** | **460 / 1000** |
+| **Digitizer Multi-Touch** | 10-Point Multi-Touch | 10-Point Multi-Touch | 5-Point Multi-Touch | 5-Point Multi-Touch | 5-Point Multi-Touch |
+| **Network Interface** | 1 Gbps Ethernet / Wi-Fi | 1 Gbps Ethernet / Wi-Fi | 1 Gbps PoE+ / Wi-Fi 6E | 100 Mbps PoE | 100 Mbps Ethernet |
 
 ---
 
