@@ -19,7 +19,7 @@ This directory contains pre-compiled, production-ready release archives for **To
 
 ## 📲 How to Load & Deploy to Touch Panels
 
-### Method 1: Deploying to Crestron Touch Panels (TSW-1070, TSW-1080, TSW-770, etc.)
+### Method 1: Deploying to Crestron Touch Panels (TSW-1070, TSW-1080, TSS-770, TSW-770, etc.)
 
 #### Option A: Direct Web Interface (Recommended Browser Method)
 1. Open a browser and navigate to your Crestron touch panel IP address:
@@ -41,7 +41,7 @@ npx @crestron/ch5-utilities-cli deploy -i <TOUCH_PANEL_IP> -p TouchPanelMark_v1.
 
 ---
 
-### Method 2: Deploying to AVstudio AVS-10 Touch Panels
+### Method 2: Deploying to AVstudio AVS-10 / AVS-15 Touch Panels
 
 #### Direct Web Management Portal (Recommended Browser Method)
 1. Open a browser and navigate to the AVS-10 management portal:
@@ -68,9 +68,14 @@ The table below summarizes empirical TouchPanelMark performance scores and offic
 | **Display Resolution** | 1280 × 800 (10.1") | 1920 × 1080 (15.6" FHD) | 1920 × 1200 (2.25x load) | 1280 × 800 | 1280 × 800 (7") | 1280 × 800 |
 | **Web Browser Engine** | Chromium 150 (WebView) | Chromium 150 (WebView) | Chromium Embedded | Chromium 80 Embedded | Chromium Embedded | Embedded WebKit / WebView |
 | **Max Stable DOM Capacity (@ 30+ FPS)** | **5,000 nodes** | **5,000 nodes** | **~4,000 nodes** *(Est.)* | **2,200 nodes** | **1,000 nodes** | **2,500 nodes** |
+| **DOM Scale & Reflow Score** | **412 / 1000** | **424 / 1000** | **410 / 1000** *(Est.)* | **310 / 1000** | **191 / 1000** | **340 / 1000** |
 | **Touch Response Latency** | **23 ms** *(S-Tier)* | **25 ms** *(A-Tier)* | **~42 ms** *(Est.)* | **64 ms** | **22 ms** *(Synthetic)* | **29 ms** |
+| **Touch Input Score** | **870 / 1000** | **800 / 1000** | **520 / 1000** *(Est.)* | **490 / 1000** | **650 / 1000** *(Synthetic)* | **620 / 1000** |
 | **Average Render Frame Rate** | **36 FPS** | **37 FPS** | **~33 FPS** *(Est.)* | **28 FPS** | **23 FPS** | **37 FPS** |
 | **Graphics & CSS Score** | **567 / 1000** | **583 / 1000** | **490 / 1000** *(Est.)* | **450 / 1000** | **383 / 1000** | **460 / 1000** |
+| **JS & SoC Compute Score** | **150 / 1000** | **138 / 1000** | **420 / 1000** *(Est.)* | **480 / 1000** | **54 / 1000** | **390 / 1000** |
+| **Control IPC Throughput Score** | **459 / 1000** | **463 / 1000** | **430 / 1000** *(Est.)* | **380 / 1000** | **454 / 1000** | **410 / 1000** |
+| **Memory & GC Stability Score** | **316 / 1000** | **338 / 1000** | **400 / 1000** *(Est.)* | **410 / 1000** | **250 / 1000** | **370 / 1000** |
 | **Digitizer Multi-Touch** | 10-Point Multi-Touch | 10-Point Multi-Touch | 5-Point Multi-Touch | 5-Point Multi-Touch | 5-Point Multi-Touch | 5-Point Multi-Touch |
 | **Network Interface** | 1 Gbps Ethernet / Wi-Fi | 1 Gbps Ethernet / Wi-Fi | 1 Gbps PoE+ / Wi-Fi 6E | 100 Mbps PoE | 100 Mbps PoE / PoE+ | 100 Mbps Ethernet |
 
@@ -96,7 +101,7 @@ Upon suite completion, TouchPanelMark opens the **Final Report** view:
 - **Performance Rating Tier**: Inspect overall score (`0–1000 pts`), efficiency (`XX.X%`), and rating tier (`S-Tier`, `A-Tier`, `B-Tier`, `C-Tier`, `D/F-Tier`).
 - **Download PDF**: Tap **`Download PDF`** in the toolbar to save a clean PDF audit document locally (`TouchPanelMark_Report_<Model>_<Timestamp>.pdf`).
 - **Gofile Cloud Upload & QR Code**: Tap **`Upload to Gofile.io`** to publish the report to the cloud and display a large **QR Code** on screen for mobile phone scanning.
-- **Panel Matrix Comparison**: Tap **Panel Matrix** in the top navigation bar to compare your panel's score side-by-side against **AVstudio AVS-10** and **Crestron TSW-1080**.
+- **Panel Matrix Comparison**: Tap **Panel Matrix** in the top navigation bar to compare your panel's score side-by-side against **AVstudio AVS-10 / AVS-15** and **Crestron TSS-770 / TSW-1070 / TSW-1080**.
 
 ---
 
